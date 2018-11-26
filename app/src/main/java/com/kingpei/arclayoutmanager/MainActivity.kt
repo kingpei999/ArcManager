@@ -24,23 +24,19 @@ class MainActivity : AppCompatActivity() {
         rv.layoutManager = arcLayoutManager
 
         var data = arrayListOf<String>()
-        data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408345354&di=fc0dd973c8698c41fad76b59fd76b558&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-07-17%2F064600414.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408345353&di=897df53ecddae10a9261a689b3aa4b55&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh1%2Fh971%2Fimg201709220953360_info300X300.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408393864&di=5ba3e38ce9657348dbb90d54abb5a9ae&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh1%2Fh971%2Fimg201709221119020_info300X300.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408424581&di=b458ceccb7adf1e2d6c9ae5fc6e3b7d2&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh1%2Fh971%2Fimg201709211633300_info300X300.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408424581&di=a549a7f937019409290051fd9382e476&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fuploadpic%2F2014-10-03%2F050247475.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408424580&di=e02f43d837de54162a25231aa45a26c1&imgtype=0&src=http%3A%2F%2Fimages.liqucn.com%2Fimg%2Fh1%2Fh969%2Fimg201709201603430_info300X300.jpg")
-        data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408424579&di=7aef1aa18817ce9457accaee68246b9b&imgtype=0&src=http%3A%2F%2Fp1.wmpic.me%2Farticle%2F2018%2F01%2F13%2F1515830619_EBjFaSrL.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408587324&di=a57534b50877ce3815201332fd4f3559&imgtype=0&src=http%3A%2F%2Fimg.myvacation.cn%2Fattchment%2Fuploadimg%2F20151103%2F144653421694824600.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408587314&di=38b2fbdd8e498cd827f56c417c5b30d0&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F00200d65b0961c5272474d51fa794908add04b1c.jpg")
         data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535004319&di=490a654157e28c551ce644933a9f63b6&imgtype=jpg&er=1&src=http%3A%2F%2Fwnzk-img.zuyushop.com%2Fr_img%2Fimg%2F20170529%2F20%2F20170529202238025_Ylk.jpg")
         rv.adapter = MyAdapter(data)
 
-        Handler().postDelayed(Runnable {
-            data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534408587314&di=38b2fbdd8e498cd827f56c417c5b30d0&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F00200d65b0961c5272474d51fa794908add04b1c.jpg")
-            data.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535004319&di=490a654157e28c551ce644933a9f63b6&imgtype=jpg&er=1&src=http%3A%2F%2Fwnzk-img.zuyushop.com%2Fr_img%2Fimg%2F20170529%2F20%2F20170529202238025_Ylk.jpg")
-            rv.adapter.notifyDataSetChanged()
-        }, 3000)
+//        Handler().postDelayed(Runnable {
+//            rv.adapter.notifyDataSetChanged()
+//        }, 3000)
 
     }
 
